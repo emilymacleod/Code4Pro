@@ -26,7 +26,9 @@
         <li><%= link_to "Login", new_user_session_path %></li>
         <% else %>
           <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><%= current_user.name %><i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+      <li><a class="dropdown-button valign-wrapper" href="#!" data-activates="dropdown1">
+        <%= image_tag avatar_url(current_user), class: "circle responsive-img" %>&nbsp;
+        <%= current_user.name %><i class="mdi-navigation-arrow-drop-down right"></i></a></li>
 
       <% end %>
 
@@ -37,7 +39,10 @@
         <li><%= link_to "Login", new_user_session_path %></li>
         <% else %>
           <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="#!" data-activates="dropdown2"><%= current_user.name %><i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+      <li><a class="dropdown-button valign-wrapper" href="#!" data-activates="dropdown2">
+        <%= image_tag avatar_url(current_user), class: "circle responsive-img" %>&nbsp;
+        <%= current_user.name %><i class="mdi-navigation-arrow-drop-down right"></i></a>
+      </li>
 
       <% end %>
 
