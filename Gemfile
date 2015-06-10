@@ -31,6 +31,10 @@ gem 'toastr-rails'
 
 gem 'mandrill-api', '1.0.52', require: 'mandrill'
 
+gem 'omniauth'
+
+gem 'omniauth-google-oauth2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

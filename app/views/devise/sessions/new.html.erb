@@ -2,6 +2,8 @@
   <div class="col m6 offset-m3 center">
 <h5>Log In</h5>
 
+<%= link_to "Log in with Google", user_omniauth_authorize_path(:google_oauth2), class: "btn red darken-1" %>
+
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <%= render partial: "shared/devisemes" %>
 
